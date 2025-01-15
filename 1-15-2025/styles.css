@@ -1,0 +1,34 @@
+body {
+    background-color: black;
+}
+
+label{
+    color:white;
+    font-size:x-large;
+}
+
+input {
+    height: 25px;
+}
+
+select {
+    font-size: 16px;
+    padding: 5px;
+}
+
+option {
+    background-color: #f0f0f0; /* Light gray background */
+    color: #333; /* Dark text color */
+}
+
+option:hover {
+    background-color: gray; 
+    color: white; /* White text on hover */
+}
+
+/* Style for the selected option */
+option:checked {
+    background-color: gray; 
+    color: white; /* White text when selected */
+}
+
