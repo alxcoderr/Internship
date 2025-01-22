@@ -40,6 +40,7 @@ $string = "Hello World!";
 print_r(explode(" ", $string));
 */
 
+/*
 $number = 10.6;
 echo round($number); //round up the number
 echo "<br>";
@@ -51,15 +52,32 @@ echo sqrt($number); //Get the square root of the number
 echo "<br>";
 echo rand(1, $number); //Generate a random between the first and the second number.
 echo "<br>";
+*/
 
+/*
+$array = ["apple", "banana", "orange"];
+$array2 = ["brown", "black", "yellow"];
+echo is_array($array);
+echo "<br>";
+array_push($array);
+print_r($array);
+echo "<br>";
+array_pop($array);
+print_r($array);
+echo "<br>";
+print_r(array_reverse($array));
+echo "<br>";
+print_r(array_merge($array, $array2));
+echo "<br>";
+*/
 
-
-
-
-
-
-
-
+echo date("y-m-d h:i:s");
+echo "<br>";
+echo time(); //Since January 1st 1970. Also called a unix time stamp.
+echo "<br>";
+$date = "2023-04-11 12:00:00";
+echo strtotime($date);
+echo "<br>";
 
 
 
