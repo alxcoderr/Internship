@@ -10,7 +10,7 @@ require_once 'includes/login_view.inc.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
-    <title>Create A Signup System in PHP</title>
+    <title>Create A Login System in PHP</title>
 </head>
 <body>
   <div class="centerDiv"> 
