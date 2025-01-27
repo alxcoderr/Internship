@@ -39,6 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
      session_id($sessionId);
   } 
     
+  
 
     catch (PDOException $e)  //catch the PDO Exception and name it variable e. The e serves as a placeholder that we are going to refer to in the curly braces.
     {
