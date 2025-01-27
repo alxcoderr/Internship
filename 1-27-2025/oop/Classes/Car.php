@@ -5,7 +5,7 @@ class Car { //creating a class or template or blueprint
     //Properties
     private $brand; //declaring variable brand.
     private $color; //declaring variable color.
-    public $vehicleType = "Car"; //definition of variable vehicleType.
+    public $vehicleType = "Truck"; //definition of variable vehicleType.
 
     //Constructor
     public function __construct($brand, $color = "none") { //creating a constructor and also assigning a default color value of none
@@ -15,10 +15,6 @@ class Car { //creating a class or template or blueprint
 
     //Method
     public function getCarInfo(){
-        return "Brand: " . $brand . ". Color:" . $color;
+        return "Brand: " . $this->brand . ". Color:" . $this->color;
     }
 }
-
-$car01 = new Car("Lambo", "green"); //creating an object, car01.
-$car02 = new Car("Rolls Royce", "black"); //creating an object, car02.
-echo $car01->vehicleType;

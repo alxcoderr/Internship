@@ -7,13 +7,11 @@
 </head>
 <body>
     <?php
+         require_once "Classes/Car.php";
 
-
-     function getCarInfo($brand, $color){
-                return "Brand: " . $brand . ". Color:" . $color;
-     }
-
-     echo getCarInfo("Volvo", "green");
+         
+$car01 = new Car("Lambo", "green"); //creating an object, car01.
+$car02 = new Car("Rolls Royce", "black"); //creating an object, car02.
      ?>
 </body>
 </html>
