@@ -30,17 +30,25 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
      require_once 'config_session.inc.php';
 
      if ($errors) {
-        $_SESSION["errors_signup"] = $errors;
+        $_SESSION["errors_login"] = $errors;
         header("Location: ../index.php");
         die();
      }
      $newSessionId = session_create_id();
      $sessionId = $newSessionId . "_" . $result["id"];
      session_id($sessionId);
-  } 
-    
-  
 
+     $_SESSION["user_id"] = $result["id"];
+     $_SESSION["user_username"] = htmlspecialchars($result["username"]);
+
+     $_SESSION["last_regeneration"] = time();
+
+     header("Location: ../index.php?login=success");
+     $pdo = null;
+     $stmt = null;
+
+     die();
+  } 
     catch (PDOException $e)  //catch the PDO Exception and name it variable e. The e serves as a placeholder that we are going to refer to in the curly braces.
     {
         die("Query Failed: " . $e->getMessage());
