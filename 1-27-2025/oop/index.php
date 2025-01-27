@@ -1,3 +1,7 @@
+<?php
+ require_once "signup.inc.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,12 +10,12 @@
     <title>Object Oriented Programming With PHP</title>
 </head>
 <body>
-    <?php
-         require_once "Classes/Car.php";
 
-         
-$car01 = new Car("Lambo", "green"); //creating an object, car01.
-$car02 = new Car("Rolls Royce", "black"); //creating an object, car02.
-     ?>
+<form action="includes/signup.inc.php">
+        <input type="text" name="username" placeholder="Username"/>
+        <input type="password" name="pwd" placeholder="Password"/>
+        <button>Login</button>
+</form>
+
 </body>
 </html>
